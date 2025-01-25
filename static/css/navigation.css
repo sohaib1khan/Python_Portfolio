@@ -1,0 +1,42 @@
+/* Navigation Bar */
+nav {
+    background-color: rgba(17, 34, 64, 0.8); /* Background color with transparency for a stylish look */
+    padding: 0.5rem; /* Add padding around the content inside the navigation bar */
+    position: fixed; /* Keep the navigation bar fixed at the top of the viewport */
+    width: 100%; /* Ensure the navigation bar spans the full width of the page */
+    z-index: 10; /* Place the navigation bar above other page elements */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Add a shadow for a subtle elevation effect */
+}
+
+/* Navigation Links - Container for the links */
+.nav-links {
+    list-style: none; /* Remove default bullet points from the list */
+    display: flex; /* Use flexbox for horizontal alignment of links */
+    justify-content: center; /* Center the links horizontally */
+    padding: 0; /* Remove default padding from the list */
+    margin: 0; /* Remove default margin from the list */
+}
+
+/* Individual List Items in Navigation */
+.nav-links li {
+    margin: 0 1rem; /* Add horizontal spacing between the links */
+}
+
+/* Styling for Navigation Links */
+.nav-links a {
+    text-decoration: none; /* Remove the default underline from links */
+    color: white; /* Set the text color to white for contrast */
+    font-weight: bold; /* Make the link text bold */
+    transition: color 0.3s; /* Smooth transition effect for color changes on hover */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6); /* Add a subtle shadow for better visibility */
+}
+
+/* Hover Effect for Navigation Links */
+.nav-links a:hover {
+    color: #64ffda; /* Change text color on hover to a vibrant green shade */
+}
+
+/* Main Content - Ensure navigation bar doesn't overlap */
+main {
+    margin-top: 4rem; /* Add top margin to push the content below the fixed navigation bar */
+}
